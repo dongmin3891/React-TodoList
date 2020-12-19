@@ -1,8 +1,8 @@
-import React from 'react';
-import { createGlobalStyle } from 'styled-components';
-import TodoHead from './components/TodoHead';
-import TodoTemplate from './components/TodoTemplate';
-import TodoList from './TodoList';
+import React from "react";
+import { createGlobalStyle } from "styled-components";
+import TodoHead from "./components/TodoHead";
+import TodoTemplate from "./components/TodoTemplate";
+import TodoList from "./components/TodoList";
 
 const GlobalStyle = createGlobalStyle`
   body {
