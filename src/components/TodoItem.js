@@ -47,16 +47,16 @@ const Remove = styled.div`
 `;
 /* TodoItemBlock 내부에서 위 3개의 내용들이 이 안에 들어감  */
 const TodoItemBlock = styled.div`
-    display: flex;
-    align-items: center;
-    padding-top: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    &:hover {
-        &{Remove} {
-            opacity: 1;
-        }
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  &:hover {
+    ${Remove} {
+      opacity: 1;
     }
+  }
 `;
 
 function TodoItem({ id, done, text }) {
