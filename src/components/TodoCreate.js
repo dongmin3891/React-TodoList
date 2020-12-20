@@ -64,6 +64,16 @@ const InsertForm = styled.div`
   border-top: 1px solid #e9ecef;
 `;
 
+/* 내부에 보여줄 input 컴포넌트  */
+const Input = styled.input`
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  box-sizing: border-box;
+`;
 function TodoCreate() {
   const [open, setOpen] = useState(false);
   const onToggle = () => setOpen(!open);
@@ -72,7 +82,9 @@ function TodoCreate() {
     <>
       {open && (
         <InsertFormPositioner>
-          <InsertForm>...</InsertForm>
+          <InsertForm>
+            <Input placeholder="할 일을 입력 후 Enter를 누르세요" autoFocus />
+          </InsertForm>
         </InsertFormPositioner>
       )}
       <CircleButton onClick={onToggle} open={open}>
