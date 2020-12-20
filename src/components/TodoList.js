@@ -22,7 +22,6 @@ function TodoList() {
           done={todo.done}
         />
       ))}
-      ;
     </TodoListBlock>
   );
 }
